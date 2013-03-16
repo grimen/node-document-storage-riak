@@ -8,6 +8,8 @@ var Storage = require('node-document-storage');
 module.exports = Storage.Spec('Riak', {
   module: require('..'),
   engine: require('riak-js'),
+  id: 'riak',
+  protocol: 'http',
   db: 'default-test',
   default_url: 'http://localhost:8098/default-test',
   authorized_url: undefined,
